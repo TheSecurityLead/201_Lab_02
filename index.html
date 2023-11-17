@@ -2,7 +2,25 @@
 <html>
 <head>
     <style>
-        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        p {
+            margin: 20px;
+        }
+        #quiz, #result {
+            display: none;
+            margin: 20px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+        }
     </style>
 </head>
 <body>
@@ -10,11 +28,16 @@
     <p>Hi, my name is David. I'm a US Army veteran of 13 years and a cyber security professional. I have 8 kids and a dog. I'm originally from NYC but now I live in the Atlanta Metro area.</p>
     <button id="start">Start Quiz</button>
     <div id="quiz">
-        <!-- Content for the quiz -->
+        <p>Let’s see how well you know me. Answer the following yes or no questions by typing y/n or yes/no in the input box. Be careful, the answers are case sensitive.</p>
+        <p id="question"></p>
+        <input id="answer" type="text">
+        <button id="submit">Submit</button>
     </div>
     <div id="result">
-        <!-- Content for the results -->
+        <p id="score"></p>
+        <p id="feedback"></p>
+        <button id="restart">Restart Quiz</button>
     </div>
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

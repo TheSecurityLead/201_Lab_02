@@ -8,7 +8,7 @@ var questions = [
     'Do I have any pets?',
     'Do I like pineapple on pizza?'
 ];
-var answers = ['y', 'n', 'y', 'y', 'y']; // Adjusted answers for case sensitivity
+var answers = ['y', 'n', 'y', 'y', 'y']; 
 var userAnswers = [];
 var correct = 0;
 var index = 0;
@@ -37,7 +37,7 @@ function startQuiz() {
 }
 
 function submitAnswer() {
-    var userAnswer = answerInput.value; // Removed toLowerCase for case sensitivity
+    var userAnswer = answerInput.value; 
     userAnswers.push(userAnswer);
 
     if (userAnswer === 'y' || userAnswer === 'n' || userAnswer === 'yes' || userAnswer === 'no') {
